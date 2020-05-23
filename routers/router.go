@@ -3,10 +3,10 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 
-	"Pet/routers/api"
+	"././api"
 	// "Pet/routers/api/v1"
-	"Pet/setting"
-	"Pet/middleware/jwt"
+	"./setting"
+	"./middleware/jwt"
 )
 
 func InitRouter() *gin.Engine {

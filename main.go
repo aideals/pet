@@ -6,9 +6,9 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 
 	"net/http"
-	"Pet/setting"
 
-	"Pet/routers"
+	"./setting"
+	"./routers"
 )
 
 func main() {
