@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6b1ae8af-1bbf-4de9-894d-a8d018ef420e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/jwt/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/jwt/jwt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/util/weChatLogin.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/util/weChatLogin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/classify.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/classify.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/commodityCollection.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/commodityCollection.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/getToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/getToken.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/api/homePage.go" beforeDir="false" afterPath="$PROJECT_DIR$/handler/homePage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/classify.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/classify.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/commodityCollection.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/commodityCollection.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/goodsDetail.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/goodsDetail.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/homePage.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/homePage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/search.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/search.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +46,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

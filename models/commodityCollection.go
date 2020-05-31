@@ -1,7 +1,7 @@
 package models 
 
 import (
-	"log"
+	"fmt"
 	"Pet/constants"
 )
 
@@ -39,7 +39,7 @@ func AddToWishlist(openId,goodsId int) {
 	commodityCollection := CommodityCollection{Userid: int64(openId), Goodsspuid: int64(goodsId)}
 	
 	if err := db.Create(&commodityCollection).Error; err != nil {
-       log.Printf(constants.DB_ERROR)
+       fmt.Print(constants.DB_ERROR)
 	}
 }
 
@@ -48,7 +48,7 @@ func DelWishlist(goodsId,openId int) int {
 	commodityCollection := CommodityCollection{Userid: int64(openId), Goodsspuid: int64(goodsId)}
 
 	if err := db.Model(&User{}).Association("WishlistGoodsSpu").Delete(&commodityCollection).Error; err != nil {
-		log.Printf(constants.DB_ERROR)
+		fmt.Print(constants.DB_ERROR)
 	}
 
 	return constants.SUCCESS

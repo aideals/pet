@@ -1,8 +1,6 @@
 package models 
 
 import (
-	"log"
-	"github.com/jinzhu/gorm"
 )
 
 type ClassifyGoodsSpu struct {
@@ -19,30 +17,27 @@ func QueryDogByClassify(classify int)([]ClassifyGoodsSpu,error) {
 	var goodsSpu []ClassifyGoodsSpu
 	
 	if err := db.Limit(12).Offset(12).Where("classify = ?",classify).Find(&goodsSpu); err != nil {
-		log.Printf(err)
-		return nil,err
+		return nil,nil
 	}
 
 	return goodsSpu,nil
 }
 
-func QueryCatByClassify(int classify)([]ClassifyGoodsSpu,error) {
+func QueryCatByClassify(classify int)([]ClassifyGoodsSpu,error) {
 	var goodsSpu []ClassifyGoodsSpu
 
 	if err := db.Limit(12).Offset(12).Where("classify = ?",classify).Find(&goodsSpu); err != nil {
-		log.Printf(err)
-		return nil,err
+		return nil,nil
 	}
 
 	return goodsSpu,nil
 }
 
-func QueryPetSuppliesByClassify(int classify)([]ClassifyGoodsSpu,error) {
+func QueryPetSuppliesByClassify(classify int)([]ClassifyGoodsSpu,error) {
 	var goodsSpu []ClassifyGoodsSpu
 
 	if err := db.Limit(12).Offset(12).Where("classify = ?",classify).Find(&goodsSpu); err != nil {
-		log.Printf(err)
-		return nil,err
+		return nil,nil
 	}
 
 	return goodsSpu,nil

@@ -3,7 +3,6 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 
-	"Pet/routers/api"
 	"Pet/setting"
 	"Pet/middleware/jwt"
 	"Pet/handler"

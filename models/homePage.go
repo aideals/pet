@@ -1,7 +1,8 @@
 package models
 
 import (
-	"log"
+	"fmt"
+	"Pet/constants"
 )
 
 type HomePageResp struct {
@@ -23,22 +24,22 @@ type GoodsSpu struct {
 	Age int64 `gorm:"column:age" json:"age" form:"age"`
 }
 
-func QueryViewPager() ([]ViewPager, err) {
+func QueryViewPager() ([]ViewPager, error) {
   var viewPager []ViewPager
 
   if err := db.Limit(3).Find(&viewPager).Error; err != nil {
-	log.Printf(constants.DB_ERROR)
+	fmt.Print(constants.DB_ERROR)
 	return nil,err	
   } 
   
   return viewPager,nil
 }
 
-func QueryGoodsSpu() ([]GoodsSpu, err) {
+func QueryGoodsSpu() ([]GoodsSpu, error) {
   var goodsSpu []GoodsSpu
 
   if err :=	db.Limit(12).Offset(12).Find(&goodsSpu).Error; err != nil {
-	log.Printf(constants.DB_ERROR)
+	fmt.Print(constants.DB_ERROR)
 	return nil,err
   }
 

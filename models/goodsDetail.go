@@ -1,8 +1,7 @@
 package models
 
 import (
-	"log"
-	"Pet/models"
+	"fmt"
 	"Pet/constants"
 )
 
@@ -25,10 +24,10 @@ type GoodsDetailGoodsSku struct {
 func QueryGoodsSkuByGoodsId(spuId int)([]GoodsDetailGoodsSku, error) {
 	var goodsSku []GoodsDetailGoodsSku
 	
-	 goodsSku,err := db.Model(&GoodsDetailGoodsSku{}).Where("spuId = ?",id).Find(&goodsSku)
+	 goodsSku,err := db.Model(&GoodsDetailGoodsSku{}).Where("spuId = ?",spuId).Find(&goodsSku)
 	 if err != nil {
-		log.Printf(constants.DB_ERROR)
-	    return nil,err
+		fmt.Print(constants.DB_ERROR)
+	    return nil,nil
 	}
 	
 	return goodsSku,nil

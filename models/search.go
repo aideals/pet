@@ -1,7 +1,8 @@
 package models 
 
 import (
-	"log"
+	"fmt"
+	"Pet/constants"
 )
 
 type GoodsSku struct {
@@ -24,7 +25,7 @@ func QueryGoodsSkuBySearchLabel(searchLable string) ([]GoodsSku, error) {
 	var goodsSku []GoodsSku
 
 	if err := db.Where("searchLable LIKE ?","%jin%").Error; err != nil {
-		log.Printf(err)
+		fmt.Print(constants.DB_ERROR)
 		return nil,err
 	}
 
