@@ -1,4 +1,4 @@
-package api
+package handler
 
 import (
 	"Pet/models"
@@ -42,6 +42,7 @@ func DelCommodityCollection(c *gin.Context) {
 }
 
 //加入购物车
+//todo
 func AddToShoppingCart(c *gin.Context) {
 
 }

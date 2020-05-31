@@ -22,7 +22,7 @@ func WXLogin(code string) (*WXLoginResp,error) {
 	url := "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code"
 	
 	//合成url,这里的appId和secret是在微信公众平台上获取的
-	url = fmt.Sprintf(url,appId,secret,code)
+	//url = fmt.Sprintf(url,appId,secret,code)
 
 	//创建http get请求
 	resp,err := http.Get(url)

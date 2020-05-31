@@ -7,8 +7,8 @@ import (
 
 	"net/http"
 
-	"./setting"
-	"./routers"
+	"Pet/setting"
+	"Pet/routers"
 )
 
 func main() {

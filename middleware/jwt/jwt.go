@@ -17,12 +17,12 @@ func JWT() gin.HandlerFunc {
 
 		code = constants.SUCCESS
 		token := c.Query("token")
-		if token = "" {
-			code := constants.INVALID_PARAMS
+		if token == "" {
+			code = constants.INVALID_PARAMS
 		} else {
 			claims,err := util.ParseToken(token)
 			if err != nil {
-				code = constatns.ERROR_AUTH_CHECK_TOKEN_FAIL
+				code = constants.ERROR_AUTH_CHECK_TOKEN_FAIL
 			} else if time.Now().Unix() > claims.ExpiresAt {
 				code = constants.ERROR_AUTH_CHECK_TOKEN_TIMEOUT
 			}
